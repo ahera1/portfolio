@@ -1,0 +1,172 @@
+/* Variable */
+:root
+{
+    --bgw: #ffffff;
+    --bg1: #286da8;
+    --bg2: #b37d4e;
+    --hi1-tx: #cd5360;
+    --hi2-tx: #438496;
+    --tx1: #444444;
+    --tx2: #ffffff;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-feature-settings: 'palt' 1;
+    font-weight: 500;
+    color: var(--tx1);
+    background-color: var(--bgw);
+}
+
+a
+{
+    color: var(--bg1);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: var(--hi2-tx);
+    text-decoration: solid underline 0.15em;
+}
+
+header
+{
+    background-size: cover;
+    background-image: url(../img/visual.png);
+}
+header > div
+{
+    background-image: url(../img/dot.png);
+    position: relative;
+    width: 100%;
+    color: var(--tx2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div:before
+{
+    content: "";
+    display: block;
+    padding-top: 37.5%;
+}
+div.titles
+{
+    margin-left: 5%;
+    margin-right: auto;
+}
+span.title
+{
+    font-weight: bolder;
+    font-size: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span.descriptions
+{
+    font-weight: bolder;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+main 
+{
+    line-height: 1.5;
+
+}
+
+h1
+{
+    margin: 3vw auto;
+    font-size: 3em;
+    font-weight: lighter;
+    color: var(--hi1-tx);
+    text-align: center;
+    text-decoration: underline 0.2em;
+}
+
+article.works > dl
+{
+    width: 90%;
+    margin: auto;
+    border-bottom: solid 1px var(--bg1);
+}
+article.works > dl > dt
+{
+    padding: 0.5em;
+}
+article.works > dl > dd
+{
+    padding: 0.5em;
+}
+
+
+article.about > dl
+{
+    width: 90%;
+    margin: auto;
+    border-bottom: solid 1px var(--bg1);
+}
+article.about > dl > dt
+{
+    padding: 0.5em;
+}
+article.about > dl > dd
+{
+    padding: 0.5em;
+}
+
+@media screen and (min-width: 960px)
+{
+    article.works > dl
+    {
+        width: 50%;
+        display: flex;
+
+    }
+
+    article.about > dl
+    {
+        width: 50%;
+        display: flex;
+    }
+
+    article.works > dl > dt
+    {
+        width: 20%;
+    }
+
+    article.about > dl > dt
+    {
+        width: 20%;
+    }
+
+    article.works > dl > dd
+    {
+        width: 80%;
+    }
+
+    article.about > dl > dd
+    {
+        width: 80%;
+    }
+
+}
+
+
+footer
+{
+    background-color: var(--bg2);
+    margin-top: 32px;
+    padding: 32px;
+    color: var(--tx2);
+}
+footer > div
+{
+    text-align: center;
+}
