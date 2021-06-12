@@ -137,6 +137,7 @@ article.about > dl > dt
 article.about > dl > dd
 {
     padding: 0.5em;
+    vertical-align: top;
 }
 
 @media screen and (min-width: 960px)
@@ -183,6 +184,11 @@ footer
     margin-top: 32px;
     padding: 32px;
     color: var(--tx2);
+}
+footer a
+{
+    color: var(--tx2);
+
 }
 footer > div
 {
